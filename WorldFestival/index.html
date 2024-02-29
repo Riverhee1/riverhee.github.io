@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>월드페스티벌</title>
+    <link rel="stylesheet" type="text/css" href="./css/style(세로형).css">
+    <script src="./javascript/jquery-3.7.1.js"></script>
+    <script src="./javascript/script(세로형).js" defer type="text/javascript"></script>
+</head>
+
+    
+
+<body>
+    <!-- 1. 레이아웃(Layout)만들기 -->
+    <!-- 웹 페이지를 만들때에 가장 먼저 해야 할 일을 와이어프레임 작성을 하는 겁니다. -->
+
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="#"><img src="./images/logo.png" alt="로고"></a>
+            </div>
+            <nav class="menu">
+                <ul class="navi">
+                    <li><a href="#">축제소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">Festival소개</a></li>
+                            <li><a href="#">행사장 안내</a></li>
+                            <li><a href="#">조직위원회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">예약안내</a>
+                        <ul class="submenu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">예약확인/취소</a></li>
+                            <li><a href="#">단체예약문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">아티스트</a>
+                        <ul class="submenu">
+                            <li><a href="#">두유노킹콩</a></li>
+                            <li><a href="#">우기욱이</a></li>
+                            <li><a href="#">예공주</a></li>
+                            <li><a href="#">우빈밴드</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="submenu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">사진갤러리</a></li>
+                            <li><a href="#">영상갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="unline">
+                    </li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- 1. header 부분에 대한 html태그 작성 후 CSS 스타일 적용과 script 코드 작성하기 -->
+
+
+    <div class="imageslide">
+        <a href="#"><img src="./images/img1.jpg" alt="이미지1">
+            <span class="imgtext">World Festival 1</span></a>
+
+        <a href="#"><img src="./images/img2.jpg" alt="이미지2">
+            <span class="imgtext">World Festival 2</span></a>
+
+        <a href="#"><img src="./images/img3.jpg" alt="이미지2">
+            <span class="imgtext">World Festival 3</span></a>
+    </div>
+    <!--2. imageslide 부분에 대한 html태그 작성후 CSS스타일 적용과 script 코드 작성하기  -->
+
+
+    <div class="contents">
+        <div class="notics">
+            <div class="tab">
+                <h4>공지사항</h4>
+            </div>
+            <ul class="not-li">
+                <li><a href="#" title="꼭!읽어봐주세요">HTML5/CSS3 프로그래밍과정<span>2022.03.01</span></a></li>
+                <li><a href="#">JavaScript 프로그래밍과정<span>2022.03.02</span></a></li>
+                <li><a href="#">jQuery 프로그래밍과정<span>2022.03.03</span></a></li>
+                <li><a href="#">Node.Js 프로그래밍과정<span>2022.03.04</span></a></li>
+            </ul>
+        </div>
+
+        <div class="gallery">
+            <div class="tab">
+                <h4>갤러리</h4>
+            </div>
+            <ul>
+                <li><a href="#"><img src="./images/gallery1.jpg" alt="이미지1"></a></li>
+                <li><a href="#"><img src="./images/gallery2.jpg" alt="이미지2"></a></li>
+                <li><a href="#"><img src="./images/gallery3.jpg" alt="이미지3"></a></li>
+            </ul>
+        </div>
+
+        <div class="shortcut">
+            <a href="#">
+                <img src="./images/shortcut.jpg" alt="바로가기 이미지">
+                <span class="sctext">바로가기</span>
+            </a>
+        </div>
+
+    </div>
+    <!--3. contents 부분에 대한 html태그 작성후 CSS스타일 적용과 script 코드 작성하기  -->
+
+    <!-- 공지사항에 글을 클릭하면 팝업 창(모달 창)이 뜰수 있도록 코드 작성 -->
+    <div id="modal">
+        <div class="modal_up">
+            <div class="uptitle">HTML5/CSS3</div>
+            <div class="upbody">
+                한 달동안 빠짐없이 학습 참여를 잘
+                해 주어서 고맙습니다.!! 
+                함께 연습했던 코드를 메모장에 붙여놓고
+                기존 웹문서인 html과 css를 삭제한 빈 페이지에
+                해당 코드를 직접 키보드 입력을 통해서...
+                코드에 대한 쓰임새와 관련하여 생각해 주시면
+                좋은 결과가 있으실 겁니다.
+            </div>
+            <div class="btn">닫기</div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="bottom">
+            <div class="btlogo">
+                <a href="#">
+                    <img src="./images/logo_bottom.png" alt="하단로고"></a>
+            </div>
+            <div class="copy">
+                COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED
+            </div>
+            <div class="familysite">
+                <select id="familySite" onchange="navigateToSite()">
+                    <option value="https://www.daum.net" title="사이트 이동">패밀리사이트 다음</option>
+                    <option value="https://www.google.com" title="사이트 이동">패밀리사이트 구글</option>
+                    <option value="https://www.naver.com" title="사이트 이동">패밀리사이트 네이버</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    <!-- select 태그에 있는 패밀리사이트 연결을 위한 스크립트 코드를 script.js 하단에서 적용함 -->
+    
+</body>
+
+</html>
